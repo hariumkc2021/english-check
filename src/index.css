@@ -1,0 +1,54 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+
+#root {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  /* font-family: 'Comfortaa', cursive; */
+}
+
+.board {
+  display: inline-block;
+  border: 10px solid #008b8b;
+  position: relative;
+}
+.column{
+max-width: 90px;
+display: inline-block;
+}
+
+.box{
+  background: no-repeat rgb(248, 229, 118);
+  border: none;
+  height: 90px;
+  width: 90px;
+  padding: 5px;
+  background-origin: content-box;
+  background-size: contain;
+}
+
+.box.black {
+  background-color: #0f500c;
+}
+.box.player1 {
+  background-image: url("./images/red-pawn.png");
+}
+.box.player2 {
+  background-image: url("./images/blue-pawn.png");
+}
