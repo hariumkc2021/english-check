@@ -8,7 +8,7 @@ export class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.columns = {a:0,b:1,c:2,d:3,e:4,f:5,g:6,h:7};
+    this.columns = {a:0,b:1,c:2,d:3,e:4,f:5,g:6,h:7} ;
 
     this.state={
       stepNumber: 0,
